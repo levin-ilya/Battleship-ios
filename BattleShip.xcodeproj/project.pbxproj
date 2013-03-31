@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0914D64A1707CA25005F5A1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0914D6491707CA25005F5A1C /* UIKit.framework */; };
+		0914D64C1707CA25005F5A1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0914D64B1707CA25005F5A1C /* Foundation.framework */; };
+		0914D64E1707CA25005F5A1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0914D64D1707CA25005F5A1C /* CoreGraphics.framework */; };
+		0914D6541707CA25005F5A1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0914D6521707CA25005F5A1C /* InfoPlist.strings */; };
+		0914D6561707CA25005F5A1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914D6551707CA25005F5A1C /* main.m */; };
+		0914D65A1707CA25005F5A1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914D6591707CA25005F5A1C /* AppDelegate.m */; };
+		0914D65C1707CA25005F5A1C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D65B1707CA25005F5A1C /* Default.png */; };
+		0914D65E1707CA25005F5A1C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D65D1707CA25005F5A1C /* Default@2x.png */; };
+		0914D6601707CA25005F5A1C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D65F1707CA25005F5A1C /* Default-568h@2x.png */; };
+		0914D6631707CA25005F5A1C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0914D6611707CA25005F5A1C /* MainStoryboard_iPhone.storyboard */; };
+		0914D6661707CA25005F5A1C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0914D6641707CA25005F5A1C /* MainStoryboard_iPad.storyboard */; };
+		0914D6691707CA25005F5A1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914D6681707CA25005F5A1C /* ViewController.m */; };
+		0914D6711707CA25005F5A1C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0914D6701707CA25005F5A1C /* SenTestingKit.framework */; };
+		0914D6721707CA25005F5A1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0914D6491707CA25005F5A1C /* UIKit.framework */; };
+		0914D6731707CA25005F5A1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0914D64B1707CA25005F5A1C /* Foundation.framework */; };
+		0914D67B1707CA25005F5A1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0914D6791707CA25005F5A1C /* InfoPlist.strings */; };
+		0914D67E1707CA25005F5A1C /* BattleShipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914D67D1707CA25005F5A1C /* BattleShipTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0914D6741707CA25005F5A1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0914D63E1707CA24005F5A1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0914D6451707CA25005F5A1C;
+			remoteInfo = BattleShip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0914D6461707CA25005F5A1C /* BattleShip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattleShip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0914D6491707CA25005F5A1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0914D64B1707CA25005F5A1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0914D64D1707CA25005F5A1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0914D6511707CA25005F5A1C /* BattleShip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BattleShip-Info.plist"; sourceTree = "<group>"; };
+		0914D6531707CA25005F5A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0914D6551707CA25005F5A1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0914D6571707CA25005F5A1C /* BattleShip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BattleShip-Prefix.pch"; sourceTree = "<group>"; };
+		0914D6581707CA25005F5A1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0914D6591707CA25005F5A1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0914D65B1707CA25005F5A1C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0914D65D1707CA25005F5A1C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0914D65F1707CA25005F5A1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0914D6621707CA25005F5A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0914D6651707CA25005F5A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0914D6671707CA25005F5A1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0914D6681707CA25005F5A1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0914D66F1707CA25005F5A1C /* BattleShipTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleShipTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0914D6701707CA25005F5A1C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0914D6781707CA25005F5A1C /* BattleShipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BattleShipTests-Info.plist"; sourceTree = "<group>"; };
+		0914D67A1707CA25005F5A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0914D67C1707CA25005F5A1C /* BattleShipTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BattleShipTests.h; sourceTree = "<group>"; };
+		0914D67D1707CA25005F5A1C /* BattleShipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BattleShipTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0914D6431707CA25005F5A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0914D64A1707CA25005F5A1C /* UIKit.framework in Frameworks */,
+				0914D64C1707CA25005F5A1C /* Foundation.framework in Frameworks */,
+				0914D64E1707CA25005F5A1C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0914D66B1707CA25005F5A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0914D6711707CA25005F5A1C /* SenTestingKit.framework in Frameworks */,
+				0914D6721707CA25005F5A1C /* UIKit.framework in Frameworks */,
+				0914D6731707CA25005F5A1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0914D63D1707CA24005F5A1C = {
+			isa = PBXGroup;
+			children = (
+				0914D64F1707CA25005F5A1C /* BattleShip */,
+				0914D6761707CA25005F5A1C /* BattleShipTests */,
+				0914D6481707CA25005F5A1C /* Frameworks */,
+				0914D6471707CA25005F5A1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0914D6471707CA25005F5A1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0914D6461707CA25005F5A1C /* BattleShip.app */,
+				0914D66F1707CA25005F5A1C /* BattleShipTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0914D6481707CA25005F5A1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0914D6491707CA25005F5A1C /* UIKit.framework */,
+				0914D64B1707CA25005F5A1C /* Foundation.framework */,
+				0914D64D1707CA25005F5A1C /* CoreGraphics.framework */,
+				0914D6701707CA25005F5A1C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0914D64F1707CA25005F5A1C /* BattleShip */ = {
+			isa = PBXGroup;
+			children = (
+				0914D6581707CA25005F5A1C /* AppDelegate.h */,
+				0914D6591707CA25005F5A1C /* AppDelegate.m */,
+				0914D6611707CA25005F5A1C /* MainStoryboard_iPhone.storyboard */,
+				0914D6641707CA25005F5A1C /* MainStoryboard_iPad.storyboard */,
+				0914D6671707CA25005F5A1C /* ViewController.h */,
+				0914D6681707CA25005F5A1C /* ViewController.m */,
+				0914D6501707CA25005F5A1C /* Supporting Files */,
+			);
+			path = BattleShip;
+			sourceTree = "<group>";
+		};
+		0914D6501707CA25005F5A1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0914D6511707CA25005F5A1C /* BattleShip-Info.plist */,
+				0914D6521707CA25005F5A1C /* InfoPlist.strings */,
+				0914D6551707CA25005F5A1C /* main.m */,
+				0914D6571707CA25005F5A1C /* BattleShip-Prefix.pch */,
+				0914D65B1707CA25005F5A1C /* Default.png */,
+				0914D65D1707CA25005F5A1C /* Default@2x.png */,
+				0914D65F1707CA25005F5A1C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0914D6761707CA25005F5A1C /* BattleShipTests */ = {
+			isa = PBXGroup;
+			children = (
+				0914D67C1707CA25005F5A1C /* BattleShipTests.h */,
+				0914D67D1707CA25005F5A1C /* BattleShipTests.m */,
+				0914D6771707CA25005F5A1C /* Supporting Files */,
+			);
+			path = BattleShipTests;
+			sourceTree = "<group>";
+		};
+		0914D6771707CA25005F5A1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0914D6781707CA25005F5A1C /* BattleShipTests-Info.plist */,
+				0914D6791707CA25005F5A1C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0914D6451707CA25005F5A1C /* BattleShip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0914D6811707CA25005F5A1C /* Build configuration list for PBXNativeTarget "BattleShip" */;
+			buildPhases = (
+				0914D6421707CA25005F5A1C /* Sources */,
+				0914D6431707CA25005F5A1C /* Frameworks */,
+				0914D6441707CA25005F5A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BattleShip;
+			productName = BattleShip;
+			productReference = 0914D6461707CA25005F5A1C /* BattleShip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0914D66E1707CA25005F5A1C /* BattleShipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0914D6841707CA25005F5A1C /* Build configuration list for PBXNativeTarget "BattleShipTests" */;
+			buildPhases = (
+				0914D66A1707CA25005F5A1C /* Sources */,
+				0914D66B1707CA25005F5A1C /* Frameworks */,
+				0914D66C1707CA25005F5A1C /* Resources */,
+				0914D66D1707CA25005F5A1C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0914D6751707CA25005F5A1C /* PBXTargetDependency */,
+			);
+			name = BattleShipTests;
+			productName = BattleShipTests;
+			productReference = 0914D66F1707CA25005F5A1C /* BattleShipTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0914D63E1707CA24005F5A1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "ILYA LEVIN";
+			};
+			buildConfigurationList = 0914D6411707CA24005F5A1C /* Build configuration list for PBXProject "BattleShip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0914D63D1707CA24005F5A1C;
+			productRefGroup = 0914D6471707CA25005F5A1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0914D6451707CA25005F5A1C /* BattleShip */,
+				0914D66E1707CA25005F5A1C /* BattleShipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0914D6441707CA25005F5A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0914D6541707CA25005F5A1C /* InfoPlist.strings in Resources */,
+				0914D65C1707CA25005F5A1C /* Default.png in Resources */,
+				0914D65E1707CA25005F5A1C /* Default@2x.png in Resources */,
+				0914D6601707CA25005F5A1C /* Default-568h@2x.png in Resources */,
+				0914D6631707CA25005F5A1C /* MainStoryboard_iPhone.storyboard in Resources */,
+				0914D6661707CA25005F5A1C /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0914D66C1707CA25005F5A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0914D67B1707CA25005F5A1C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0914D66D1707CA25005F5A1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0914D6421707CA25005F5A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0914D6561707CA25005F5A1C /* main.m in Sources */,
+				0914D65A1707CA25005F5A1C /* AppDelegate.m in Sources */,
+				0914D6691707CA25005F5A1C /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0914D66A1707CA25005F5A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0914D67E1707CA25005F5A1C /* BattleShipTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0914D6751707CA25005F5A1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0914D6451707CA25005F5A1C /* BattleShip */;
+			targetProxy = 0914D6741707CA25005F5A1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0914D6521707CA25005F5A1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0914D6531707CA25005F5A1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0914D6611707CA25005F5A1C /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0914D6621707CA25005F5A1C /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0914D6641707CA25005F5A1C /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0914D6651707CA25005F5A1C /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0914D6791707CA25005F5A1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0914D67A1707CA25005F5A1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0914D67F1707CA25005F5A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0914D6801707CA25005F5A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0914D6821707CA25005F5A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BattleShip/BattleShip-Prefix.pch";
+				INFOPLIST_FILE = "BattleShip/BattleShip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0914D6831707CA25005F5A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BattleShip/BattleShip-Prefix.pch";
+				INFOPLIST_FILE = "BattleShip/BattleShip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0914D6851707CA25005F5A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BattleShip.app/BattleShip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BattleShip/BattleShip-Prefix.pch";
+				INFOPLIST_FILE = "BattleShipTests/BattleShipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0914D6861707CA25005F5A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BattleShip.app/BattleShip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BattleShip/BattleShip-Prefix.pch";
+				INFOPLIST_FILE = "BattleShipTests/BattleShipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0914D6411707CA24005F5A1C /* Build configuration list for PBXProject "BattleShip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0914D67F1707CA25005F5A1C /* Debug */,
+				0914D6801707CA25005F5A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0914D6811707CA25005F5A1C /* Build configuration list for PBXNativeTarget "BattleShip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0914D6821707CA25005F5A1C /* Debug */,
+				0914D6831707CA25005F5A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0914D6841707CA25005F5A1C /* Build configuration list for PBXNativeTarget "BattleShipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0914D6851707CA25005F5A1C /* Debug */,
+				0914D6861707CA25005F5A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0914D63E1707CA24005F5A1C /* Project object */;
+}
