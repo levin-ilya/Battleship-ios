@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  GameController.h
 //  BattleShip
 //
 //  Created by ILYA LEVIN on 3/30/13.
@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 #import "GameModel.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface GameController : UIViewController{
+    GameModel *game;
+}
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong,nonatomic) GameModel *game;
+
 
 @end

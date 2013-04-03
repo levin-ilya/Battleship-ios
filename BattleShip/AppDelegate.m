@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "GameModel.h"
 
 @implementation AppDelegate
+
+@synthesize game;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.game = [[GameModel alloc] initWithLevel:1];
     return YES;
 }
 							
