@@ -17,13 +17,26 @@
 		0914D65E1707CA25005F5A1C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D65D1707CA25005F5A1C /* Default@2x.png */; };
 		0914D6601707CA25005F5A1C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D65F1707CA25005F5A1C /* Default-568h@2x.png */; };
 		0914D6631707CA25005F5A1C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0914D6611707CA25005F5A1C /* MainStoryboard_iPhone.storyboard */; };
-		0914D6661707CA25005F5A1C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0914D6641707CA25005F5A1C /* MainStoryboard_iPad.storyboard */; };
 		0914D6691707CA25005F5A1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914D6681707CA25005F5A1C /* ViewController.m */; };
 		0914D6711707CA25005F5A1C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0914D6701707CA25005F5A1C /* SenTestingKit.framework */; };
 		0914D6721707CA25005F5A1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0914D6491707CA25005F5A1C /* UIKit.framework */; };
 		0914D6731707CA25005F5A1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0914D64B1707CA25005F5A1C /* Foundation.framework */; };
 		0914D67B1707CA25005F5A1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0914D6791707CA25005F5A1C /* InfoPlist.strings */; };
 		0914D67E1707CA25005F5A1C /* BattleShipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914D67D1707CA25005F5A1C /* BattleShipTests.m */; };
+		0914D6891707D1BF005F5A1C /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914D6881707D1BF005F5A1C /* GameController.m */; };
+		0914D69417089E8D005F5A1C /* water2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0914D68B17089E8D005F5A1C /* water2.jpg */; };
+		0914D69517089E8D005F5A1C /* tdbig_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D68C17089E8D005F5A1C /* tdbig_up.png */; };
+		0914D69617089E8D005F5A1C /* tdbig_sub2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D68D17089E8D005F5A1C /* tdbig_sub2.png */; };
+		0914D69717089E8D005F5A1C /* tdbig_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D68E17089E8D005F5A1C /* tdbig_right.png */; };
+		0914D69817089E8D005F5A1C /* tdbig_pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D68F17089E8D005F5A1C /* tdbig_pencil.png */; };
+		0914D69917089E8D005F5A1C /* tdbig_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D69017089E8D005F5A1C /* tdbig_left.png */; };
+		0914D69A17089E8D005F5A1C /* tdbig_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D69117089E8D005F5A1C /* tdbig_down.png */; };
+		0914D69B17089E8D005F5A1C /* tdbig_center.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D69217089E8D005F5A1C /* tdbig_center.png */; };
+		0914D69C17089E8D005F5A1C /* playfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 0914D69317089E8D005F5A1C /* playfield.png */; };
+		0914D69F1708A099005F5A1C /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914D69E1708A099005F5A1C /* GameModel.m */; };
+		09FA539C170A792700C21093 /* BoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA539B170A792700C21093 /* BoardView.m */; };
+		09FA53A8170AFD8100C21093 /* TileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53A7170AFD8000C21093 /* TileCell.m */; };
+		09FA53AB170BCB3E00C21093 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53AA170BCB3E00C21093 /* Tile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +64,6 @@
 		0914D65D1707CA25005F5A1C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0914D65F1707CA25005F5A1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0914D6621707CA25005F5A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		0914D6651707CA25005F5A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		0914D6671707CA25005F5A1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0914D6681707CA25005F5A1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0914D66F1707CA25005F5A1C /* BattleShipTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleShipTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +72,25 @@
 		0914D67A1707CA25005F5A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0914D67C1707CA25005F5A1C /* BattleShipTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BattleShipTests.h; sourceTree = "<group>"; };
 		0914D67D1707CA25005F5A1C /* BattleShipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BattleShipTests.m; sourceTree = "<group>"; };
+		0914D6871707D1BF005F5A1C /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		0914D6881707D1BF005F5A1C /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		0914D68B17089E8D005F5A1C /* water2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = water2.jpg; sourceTree = "<group>"; };
+		0914D68C17089E8D005F5A1C /* tdbig_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tdbig_up.png; sourceTree = "<group>"; };
+		0914D68D17089E8D005F5A1C /* tdbig_sub2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tdbig_sub2.png; sourceTree = "<group>"; };
+		0914D68E17089E8D005F5A1C /* tdbig_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tdbig_right.png; sourceTree = "<group>"; };
+		0914D68F17089E8D005F5A1C /* tdbig_pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tdbig_pencil.png; sourceTree = "<group>"; };
+		0914D69017089E8D005F5A1C /* tdbig_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tdbig_left.png; sourceTree = "<group>"; };
+		0914D69117089E8D005F5A1C /* tdbig_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tdbig_down.png; sourceTree = "<group>"; };
+		0914D69217089E8D005F5A1C /* tdbig_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tdbig_center.png; sourceTree = "<group>"; };
+		0914D69317089E8D005F5A1C /* playfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playfield.png; sourceTree = "<group>"; };
+		0914D69D1708A099005F5A1C /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		0914D69E1708A099005F5A1C /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
+		09FA539A170A792700C21093 /* BoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardView.h; sourceTree = "<group>"; };
+		09FA539B170A792700C21093 /* BoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardView.m; sourceTree = "<group>"; };
+		09FA53A6170AFD8000C21093 /* TileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileCell.h; sourceTree = "<group>"; };
+		09FA53A7170AFD8000C21093 /* TileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileCell.m; sourceTree = "<group>"; };
+		09FA53A9170BCB3E00C21093 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		09FA53AA170BCB3E00C21093 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +150,23 @@
 		0914D64F1707CA25005F5A1C /* BattleShip */ = {
 			isa = PBXGroup;
 			children = (
+				09FA53A6170AFD8000C21093 /* TileCell.h */,
+				09FA53A7170AFD8000C21093 /* TileCell.m */,
+				0914D68A17089E67005F5A1C /* assets */,
 				0914D6581707CA25005F5A1C /* AppDelegate.h */,
 				0914D6591707CA25005F5A1C /* AppDelegate.m */,
 				0914D6611707CA25005F5A1C /* MainStoryboard_iPhone.storyboard */,
-				0914D6641707CA25005F5A1C /* MainStoryboard_iPad.storyboard */,
+				09FA539A170A792700C21093 /* BoardView.h */,
+				09FA539B170A792700C21093 /* BoardView.m */,
 				0914D6671707CA25005F5A1C /* ViewController.h */,
 				0914D6681707CA25005F5A1C /* ViewController.m */,
 				0914D6501707CA25005F5A1C /* Supporting Files */,
+				0914D6871707D1BF005F5A1C /* GameController.h */,
+				0914D6881707D1BF005F5A1C /* GameController.m */,
+				0914D69D1708A099005F5A1C /* GameModel.h */,
+				0914D69E1708A099005F5A1C /* GameModel.m */,
+				09FA53A9170BCB3E00C21093 /* Tile.h */,
+				09FA53AA170BCB3E00C21093 /* Tile.m */,
 			);
 			path = BattleShip;
 			sourceTree = "<group>";
@@ -161,6 +202,22 @@
 				0914D6791707CA25005F5A1C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0914D68A17089E67005F5A1C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				0914D68B17089E8D005F5A1C /* water2.jpg */,
+				0914D68C17089E8D005F5A1C /* tdbig_up.png */,
+				0914D68D17089E8D005F5A1C /* tdbig_sub2.png */,
+				0914D68E17089E8D005F5A1C /* tdbig_right.png */,
+				0914D68F17089E8D005F5A1C /* tdbig_pencil.png */,
+				0914D69017089E8D005F5A1C /* tdbig_left.png */,
+				0914D69117089E8D005F5A1C /* tdbig_down.png */,
+				0914D69217089E8D005F5A1C /* tdbig_center.png */,
+				0914D69317089E8D005F5A1C /* playfield.png */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +296,15 @@
 				0914D65E1707CA25005F5A1C /* Default@2x.png in Resources */,
 				0914D6601707CA25005F5A1C /* Default-568h@2x.png in Resources */,
 				0914D6631707CA25005F5A1C /* MainStoryboard_iPhone.storyboard in Resources */,
-				0914D6661707CA25005F5A1C /* MainStoryboard_iPad.storyboard in Resources */,
+				0914D69417089E8D005F5A1C /* water2.jpg in Resources */,
+				0914D69517089E8D005F5A1C /* tdbig_up.png in Resources */,
+				0914D69617089E8D005F5A1C /* tdbig_sub2.png in Resources */,
+				0914D69717089E8D005F5A1C /* tdbig_right.png in Resources */,
+				0914D69817089E8D005F5A1C /* tdbig_pencil.png in Resources */,
+				0914D69917089E8D005F5A1C /* tdbig_left.png in Resources */,
+				0914D69A17089E8D005F5A1C /* tdbig_down.png in Resources */,
+				0914D69B17089E8D005F5A1C /* tdbig_center.png in Resources */,
+				0914D69C17089E8D005F5A1C /* playfield.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +342,11 @@
 				0914D6561707CA25005F5A1C /* main.m in Sources */,
 				0914D65A1707CA25005F5A1C /* AppDelegate.m in Sources */,
 				0914D6691707CA25005F5A1C /* ViewController.m in Sources */,
+				0914D6891707D1BF005F5A1C /* GameController.m in Sources */,
+				0914D69F1708A099005F5A1C /* GameModel.m in Sources */,
+				09FA539C170A792700C21093 /* BoardView.m in Sources */,
+				09FA53A8170AFD8100C21093 /* TileCell.m in Sources */,
+				09FA53AB170BCB3E00C21093 /* Tile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,14 +383,6 @@
 				0914D6621707CA25005F5A1C /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		0914D6641707CA25005F5A1C /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0914D6651707CA25005F5A1C /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		0914D6791707CA25005F5A1C /* InfoPlist.strings */ = {
@@ -399,6 +461,7 @@
 				GCC_PREFIX_HEADER = "BattleShip/BattleShip-Prefix.pch";
 				INFOPLIST_FILE = "BattleShip/BattleShip-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,6 +473,7 @@
 				GCC_PREFIX_HEADER = "BattleShip/BattleShip-Prefix.pch";
 				INFOPLIST_FILE = "BattleShip/BattleShip-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,6 +531,7 @@
 				0914D6831707CA25005F5A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0914D6841707CA25005F5A1C /* Build configuration list for PBXNativeTarget "BattleShipTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +540,7 @@
 				0914D6861707CA25005F5A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
