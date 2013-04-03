@@ -7,7 +7,7 @@
 //
 
 #import "GameModel.h"
-#import "Tile.h"
+#import "TileModel.h"
 
 
 @implementation GameModel
@@ -15,23 +15,44 @@
 @synthesize boardsize;
 
 -(id)initWithLevel:(int)level{
-    Tile *blankTile = [[Tile alloc] initwithType:BLANK];
     if(level==1){
-        self.boardsize=2;
+        self.boardsize=3;
         currentBoard = [NSMutableArray arrayWithCapacity:boardsize*boardsize];
         for (int i=0; i<boardsize*boardsize; i++) {
-            [currentBoard addObject:blankTile];
+            [currentBoard addObject:[[TileModel alloc] initwithType:BLANK]];
         }
-        anwserBoard = [currentBoard copy];
-        [[anwserBoard objectAtIndex:1] setState:SHIPBLOCK];
+        answerBoard = [currentBoard copy];
+        [[answerBoard objectAtIndex:1] setTileState:SHIPBLOCK];
         
     }
     return self;
 }
 
--(Tile *)getTileState:(int)position{
+-(TileModel *)getTileState:(int)position{
     return [currentBoard objectAtIndex:position];
 }
+
+-(TileType)rotateTile:(NSInteger)position{
+   return [[currentBoard objectAtIndex:position] rotateState];
+}
+
+-(NSInteger)rowCount:(NSInteger)row{
+    NSInteger results=0;
+    int startloop = row*boardsize;
+    int endloop = startloop-boardsize;
+    // this loops down
+    for(int i=startloop;i<=endloop;i--){
+        if([[answerBoard objectAtIndex:i-1] tileState]==SHIPBLOCK){
+            results++;
+        }
+    }
+    return results;
+}
+
+-(NSInteger)colCount:(NSInteger)col{
+    
+}
+
 
 
 @end

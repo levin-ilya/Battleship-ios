@@ -1,20 +1,25 @@
 //
-//  BoardView.m
+//  rowColCell.m
 //  BattleShip
 //
-//  Created by ILYA LEVIN on 4/1/13.
+//  Created by ILYA LEVIN on 4/3/13.
 //  Copyright (c) 2013 ILYA LEVIN. All rights reserved.
 //
 
-#import "BoardView.h"
-#import "AppDelegate.h"
-#import "GameModel.h"
-#import "TileModel.h"
-#import "TileCell.h"
+#import "RowColCell.h"
 
-@implementation BoardView
+@implementation RowColCell
 
+@synthesize label;
 
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+    }
+    return self;
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -24,10 +29,5 @@
     // Drawing code
 }
 */
-
-
-
-
-
 
 @end

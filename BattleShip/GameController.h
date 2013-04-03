@@ -10,10 +10,14 @@
 #import "AppDelegate.h"
 #import "GameModel.h"
 
-@interface GameController : UIViewController{
+@interface GameController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>{
     GameModel *game;
 }
 
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *BoardWidth;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *BoardHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *ColNumWidth;
 
 
 @end

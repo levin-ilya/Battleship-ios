@@ -7,20 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Tile.h"
+#import "TileModel.h"
 
 
 @interface GameModel : NSObject{
     
      NSMutableArray *currentBoard;
-     NSMutableArray *anwserBoard;
+     NSMutableArray *answerBoard;
     
 }
 
 
 @property(assign,readwrite) int boardsize;
 -(id)initWithLevel:(int)level;
--(Tile *)getTileState:(int)position;
+-(TileModel *)getTileState:(int)position;
+-(TileType)rotateTile:(NSInteger)position;
+-(NSInteger)rowCount:(NSInteger)row;
+-(NSInteger)colCount:(NSInteger)col;
 
 
 @end

@@ -36,7 +36,10 @@
 		0914D69F1708A099005F5A1C /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914D69E1708A099005F5A1C /* GameModel.m */; };
 		09FA539C170A792700C21093 /* BoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA539B170A792700C21093 /* BoardView.m */; };
 		09FA53A8170AFD8100C21093 /* TileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53A7170AFD8000C21093 /* TileCell.m */; };
-		09FA53AB170BCB3E00C21093 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53AA170BCB3E00C21093 /* Tile.m */; };
+		09FA53AB170BCB3E00C21093 /* TileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53AA170BCB3E00C21093 /* TileModel.m */; };
+		09FA53AF170CC1DE00C21093 /* RowNum.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53AE170CC1DE00C21093 /* RowNum.m */; };
+		09FA53B2170CC76300C21093 /* ColNum.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53B1170CC76300C21093 /* ColNum.m */; };
+		09FA53B5170CD24D00C21093 /* RowColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53B4170CD24D00C21093 /* RowColCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +92,14 @@
 		09FA539B170A792700C21093 /* BoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardView.m; sourceTree = "<group>"; };
 		09FA53A6170AFD8000C21093 /* TileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileCell.h; sourceTree = "<group>"; };
 		09FA53A7170AFD8000C21093 /* TileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileCell.m; sourceTree = "<group>"; };
-		09FA53A9170BCB3E00C21093 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
-		09FA53AA170BCB3E00C21093 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		09FA53A9170BCB3E00C21093 /* TileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileModel.h; sourceTree = "<group>"; };
+		09FA53AA170BCB3E00C21093 /* TileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileModel.m; sourceTree = "<group>"; };
+		09FA53AD170CC1DD00C21093 /* RowNum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowNum.h; sourceTree = "<group>"; };
+		09FA53AE170CC1DE00C21093 /* RowNum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowNum.m; sourceTree = "<group>"; };
+		09FA53B0170CC76200C21093 /* ColNum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColNum.h; sourceTree = "<group>"; };
+		09FA53B1170CC76300C21093 /* ColNum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColNum.m; sourceTree = "<group>"; };
+		09FA53B3170CD24C00C21093 /* RowColCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowColCell.h; sourceTree = "<group>"; };
+		09FA53B4170CD24D00C21093 /* RowColCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowColCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,14 +159,19 @@
 		0914D64F1707CA25005F5A1C /* BattleShip */ = {
 			isa = PBXGroup;
 			children = (
+				09FA53AC170BFE0600C21093 /* Board */,
 				09FA53A6170AFD8000C21093 /* TileCell.h */,
 				09FA53A7170AFD8000C21093 /* TileCell.m */,
 				0914D68A17089E67005F5A1C /* assets */,
 				0914D6581707CA25005F5A1C /* AppDelegate.h */,
 				0914D6591707CA25005F5A1C /* AppDelegate.m */,
 				0914D6611707CA25005F5A1C /* MainStoryboard_iPhone.storyboard */,
-				09FA539A170A792700C21093 /* BoardView.h */,
-				09FA539B170A792700C21093 /* BoardView.m */,
+				09FA53B3170CD24C00C21093 /* RowColCell.h */,
+				09FA53B4170CD24D00C21093 /* RowColCell.m */,
+				09FA53B0170CC76200C21093 /* ColNum.h */,
+				09FA53B1170CC76300C21093 /* ColNum.m */,
+				09FA53AD170CC1DD00C21093 /* RowNum.h */,
+				09FA53AE170CC1DE00C21093 /* RowNum.m */,
 				0914D6671707CA25005F5A1C /* ViewController.h */,
 				0914D6681707CA25005F5A1C /* ViewController.m */,
 				0914D6501707CA25005F5A1C /* Supporting Files */,
@@ -165,8 +179,8 @@
 				0914D6881707D1BF005F5A1C /* GameController.m */,
 				0914D69D1708A099005F5A1C /* GameModel.h */,
 				0914D69E1708A099005F5A1C /* GameModel.m */,
-				09FA53A9170BCB3E00C21093 /* Tile.h */,
-				09FA53AA170BCB3E00C21093 /* Tile.m */,
+				09FA53A9170BCB3E00C21093 /* TileModel.h */,
+				09FA53AA170BCB3E00C21093 /* TileModel.m */,
 			);
 			path = BattleShip;
 			sourceTree = "<group>";
@@ -218,6 +232,15 @@
 				0914D69317089E8D005F5A1C /* playfield.png */,
 			);
 			name = assets;
+			sourceTree = "<group>";
+		};
+		09FA53AC170BFE0600C21093 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				09FA539B170A792700C21093 /* BoardView.m */,
+				09FA539A170A792700C21093 /* BoardView.h */,
+			);
+			name = Board;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +369,10 @@
 				0914D69F1708A099005F5A1C /* GameModel.m in Sources */,
 				09FA539C170A792700C21093 /* BoardView.m in Sources */,
 				09FA53A8170AFD8100C21093 /* TileCell.m in Sources */,
-				09FA53AB170BCB3E00C21093 /* Tile.m in Sources */,
+				09FA53AB170BCB3E00C21093 /* TileModel.m in Sources */,
+				09FA53AF170CC1DE00C21093 /* RowNum.m in Sources */,
+				09FA53B2170CC76300C21093 /* ColNum.m in Sources */,
+				09FA53B5170CD24D00C21093 /* RowColCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

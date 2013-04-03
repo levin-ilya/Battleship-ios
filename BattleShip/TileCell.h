@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameModel.h"
+#import "AppDelegate.h"
+
 
 @interface TileCell : UICollectionViewCell
 
 @property(strong,nonatomic) IBOutlet UIImageView *imageView;
-@property(strong,nonatomic) NSString *state;
+@property(readwrite,nonatomic) NSInteger position;
+@property(strong,nonatomic) GameModel *game;
+
 @end

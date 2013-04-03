@@ -7,19 +7,26 @@
 //
 
 #import "TileCell.h"
+#import "GameModel.h"
+#import "AppDelegate.h"
 
 @implementation TileCell
 
+
+@synthesize imageView;
+@synthesize position;
+@synthesize game;
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.imageView.image = [UIImage imageNamed:@"playfield.png"];
     }
     return self;
 }
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -29,6 +36,18 @@
     // Drawing code
 }
 */
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    TileType state = [game rotateTile:self.position];
+    if(state==WATER){
+        self.imageView.image = [UIImage imageNamed:@"water2.jpg"];
+    }else if(state==SHIPBLOCK){
+        self.imageView.image = [UIImage imageNamed:@"tdbig_pencil.png"];
+    }else if(state==BLANK){
+        self.imageView.image = [UIImage imageNamed:@"playfield.png"];
+    }
+    
+}
 
 
 @end
