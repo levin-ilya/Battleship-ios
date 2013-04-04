@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GameModel.h"
 #import "AppDelegate.h"
+#import "GameController.h"
 
 
 @interface TileCell : UICollectionViewCell
@@ -16,5 +17,5 @@
 @property(strong,nonatomic) IBOutlet UIImageView *imageView;
 @property(readwrite,nonatomic) NSInteger position;
 @property(strong,nonatomic) GameModel *game;
-
+@property(strong,nonatomic) GameController *controller;
 @end

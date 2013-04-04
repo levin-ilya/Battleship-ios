@@ -12,6 +12,7 @@
 #import "AppDelegate.h"
 #import "RowNum.h"
 #import "ColNum.h"
+#import "RowColCell.h"
 
 @interface GameController ()
 
@@ -56,7 +57,7 @@ static float cellSize = 50;
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     NSInteger results;
-    if([collectionView isKindOfClass:[UICollectionView class]]){
+    if([collectionView isMemberOfClass:[UICollectionView class]]){
         results = game.boardsize*game.boardsize;
     }else{
         results = game.boardsize;
@@ -68,21 +69,44 @@ static float cellSize = 50;
     
     UICollectionViewCell *cell;
     if([collectionView isKindOfClass:[RowNum class]]){
-        cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"rowNum" forIndexPath:indexPath];
+        RowColCell *c = [collectionView dequeueReusableCellWithReuseIdentifier:@"rowNum" forIndexPath:indexPath];
+        
+        c.position = indexPath.item;
+        c.label.text = [NSString stringWithFormat:@"%d", [game answerRowCount:indexPath.item]];
+        if([game isRowOver:indexPath.item]){
+            c.label.font = [UIFont boldSystemFontOfSize:20];
+            c.label.textColor=[UIColor redColor];
+        }else{
+            c.label.font = [UIFont systemFontOfSize:20];
+            c.label.textColor = [UIColor blackColor];
+            }
+        cell=c;
     }else if([collectionView isKindOfClass:[ColNum class]]){
-        cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"colNum" forIndexPath:indexPath];
+        RowColCell *c = [collectionView dequeueReusableCellWithReuseIdentifier:@"colNum" forIndexPath:indexPath];
+        
+        c.position = indexPath.item;
+        c.label.text = [NSString stringWithFormat:@"%d", [game answerColCount:indexPath.item]];;
+        cell=c;
     }else{
         TileCell *t = [collectionView dequeueReusableCellWithReuseIdentifier:@"tile" forIndexPath:indexPath];
         t.imageView.image = [UIImage imageNamed:@"playfield.png"];
         t.position = indexPath.item;
         t.game=game;
+        t.controller=self;
         cell=t;
         
     }
     return cell;
 }
 
+-(void)updateRowColNumbers:(NSInteger)position{
+    NSInteger row = [self positionToRow:position];
+  [self.rowCollectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:row inSection:0]]];
+}
 
+-(NSInteger)positionToRow:(NSInteger)position{
+    return (position/game.boardsize);
+}
 
 
 @end

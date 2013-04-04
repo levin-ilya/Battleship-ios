@@ -16,6 +16,7 @@
 @synthesize imageView;
 @synthesize position;
 @synthesize game;
+@synthesize controller;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -46,6 +47,7 @@
     }else if(state==BLANK){
         self.imageView.image = [UIImage imageNamed:@"playfield.png"];
     }
+    [controller updateRowColNumbers:self.position];
     
 }
 

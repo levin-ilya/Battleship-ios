@@ -11,6 +11,7 @@
 @interface RowColCell : UICollectionViewCell
 
 
-@property (retain, nonatomic) UILabel* label;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property(readwrite,nonatomic) NSInteger position;
 
 @end

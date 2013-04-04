@@ -119,7 +119,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="rowNum" id="IQc-Su-ojM" customClass="rowColCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="rowNum" id="IQc-Su-ojM" customClass="RowColCell">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -129,8 +129,9 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQj-Se-cAS">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42" id="772-eF-JxD"/>
+                                                        <constraint firstAttribute="height" constant="21" id="B1N-vP-jFV"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -142,6 +143,9 @@
                                             <constraint firstItem="RQj-Se-cAS" firstAttribute="centerX" secondItem="IQc-Su-ojM" secondAttribute="centerX" type="default" id="gCC-TU-9no"/>
                                             <constraint firstItem="RQj-Se-cAS" firstAttribute="top" secondItem="IQc-Su-ojM" secondAttribute="top" constant="14" id="gx9-f1-8az"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="RQj-Se-cAS" id="wly-QJ-mFk"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -162,7 +166,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colNum" id="goJ-ZJ-2vV">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colNum" id="goJ-ZJ-2vV" customClass="RowColCell">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -172,8 +176,9 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb4-wG-iDE">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42" id="G7l-o9-ZZ7"/>
+                                                        <constraint firstAttribute="height" constant="21" id="xyh-o4-J5s"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -185,6 +190,9 @@
                                             <constraint firstItem="tb4-wG-iDE" firstAttribute="top" secondItem="goJ-ZJ-2vV" secondAttribute="top" constant="14" id="Omc-Wn-0eM"/>
                                             <constraint firstItem="tb4-wG-iDE" firstAttribute="centerX" secondItem="goJ-ZJ-2vV" secondAttribute="centerX" type="default" id="QKh-0k-nBs"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="tb4-wG-iDE" id="DJ2-Yr-Blr"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -208,7 +216,11 @@
                     <connections>
                         <outlet property="BoardHeight" destination="kZz-le-o2Q" id="8df-75-uzB"/>
                         <outlet property="BoardWidth" destination="KKy-xb-7Hf" id="tJo-O1-WjC"/>
+                        <outlet property="ColCollectionView" destination="0zs-w9-mnO" id="eEm-Cv-elN"/>
                         <outlet property="ColNumWidth" destination="9bR-nb-ueY" id="Vkh-q3-dP5"/>
+                        <outlet property="RowCollectionView" destination="tOu-Cy-Oi9" id="SpE-IB-mCb"/>
+                        <outlet property="colCollectionView" destination="0zs-w9-mnO" id="VyW-Ye-cCc"/>
+                        <outlet property="rowCollectionView" destination="tOu-Cy-Oi9" id="CW4-Ld-ygt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3L-LX-7QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -226,10 +238,18 @@
                 <relationship kind="outlet" name="BoardHeight" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="BoardWidth" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="ColNumWidth" candidateClass="NSLayoutConstraint"/>
+                <relationship kind="outlet" name="colCollectionView" candidateClass="ColNum"/>
+                <relationship kind="outlet" name="rowCollectionView" candidateClass="RowNum"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="RowColCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RowColCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="RowNum" superclassName="UICollectionView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RowNum.h"/>

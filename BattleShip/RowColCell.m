@@ -11,6 +11,7 @@
 @implementation RowColCell
 
 @synthesize label;
+@synthesize position;
 
 - (id)initWithFrame:(CGRect)frame
 {

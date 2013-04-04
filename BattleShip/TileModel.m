@@ -15,7 +15,7 @@
 @synthesize tileState;
 
 -(id)initwithType:(TileType)type{
-    self.tileState=BLANK;
+    self.tileState=type;
     return self;
 }
 

@@ -14,6 +14,8 @@
     
      NSMutableArray *currentBoard;
      NSMutableArray *answerBoard;
+     NSMutableArray *rowAnswersNums;
+     NSMutableArray *colAnswersNums;
     
 }
 
@@ -22,8 +24,9 @@
 -(id)initWithLevel:(int)level;
 -(TileModel *)getTileState:(int)position;
 -(TileType)rotateTile:(NSInteger)position;
--(NSInteger)rowCount:(NSInteger)row;
--(NSInteger)colCount:(NSInteger)col;
+-(NSInteger)answerRowCount:(NSInteger)row;
+-(NSInteger)answerColCount:(NSInteger)col;
+-(Boolean)isRowOver:(NSInteger)row;
 
 
 @end
