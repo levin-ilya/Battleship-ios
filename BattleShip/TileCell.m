@@ -40,6 +40,13 @@
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     TileType state = [game rotateTile:self.position];
+    [self updateImage:state];
+    [controller updateRowColNumbers:self.position];
+    
+}
+
+
+-(void)updateImage:(TileType)state{
     if(state==WATER){
         self.imageView.image = [UIImage imageNamed:@"water2.jpg"];
     }else if(state==SHIPBLOCK){
@@ -47,9 +54,6 @@
     }else if(state==BLANK){
         self.imageView.image = [UIImage imageNamed:@"playfield.png"];
     }
-    [controller updateRowColNumbers:self.position];
-    
 }
-
 
 @end

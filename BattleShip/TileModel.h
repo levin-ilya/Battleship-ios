@@ -14,7 +14,9 @@ typedef enum Tile{BLANK,SHIPBLOCK,WATER} TileType;
 
 
 @property(readwrite,nonatomic) TileType tileState;
+@property(readwrite,nonatomic) Boolean canChangeState;
 -(id)initwithType:(TileType)type;
 -(TileType)rotateState;
+- (BOOL)isEqualTo:(id)tile;
 
 @end

@@ -13,6 +13,7 @@
 #import "RowNum.h"
 #import "ColNum.h"
 #import "RowColCell.h"
+#import "WinnerController.h"
 
 @interface GameController ()
 
@@ -20,7 +21,7 @@
 
 @implementation GameController
 
-static float cellSize = 50;
+static float cellSize = 25;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,10 +40,13 @@ static float cellSize = 50;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    game = app.game;
-    
+    game = [[GameModel alloc] initWithLevel:0];
+    app.game = game;
+    [game registerTimerLister:self method:@selector(updateTimer:)];
     self.BoardHeight.constant = game.boardsize * cellSize;
     self.BoardWidth.constant = game.boardsize * cellSize;
+    self.ColNumWidth.constant = game.boardsize * cellSize + cellSize;
+    [game startTimer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -85,13 +89,20 @@ static float cellSize = 50;
         RowColCell *c = [collectionView dequeueReusableCellWithReuseIdentifier:@"colNum" forIndexPath:indexPath];
         
         c.position = indexPath.item;
-        c.label.text = [NSString stringWithFormat:@"%d", [game answerColCount:indexPath.item]];;
+        c.label.text = [NSString stringWithFormat:@"%d", [game answerColCount:indexPath.item]];
+        if([game isColOver:indexPath.item]){
+            c.label.font = [UIFont boldSystemFontOfSize:20];
+            c.label.textColor=[UIColor redColor];
+        }else{
+            c.label.font = [UIFont systemFontOfSize:20];
+            c.label.textColor = [UIColor blackColor];
+        }
         cell=c;
     }else{
         TileCell *t = [collectionView dequeueReusableCellWithReuseIdentifier:@"tile" forIndexPath:indexPath];
-        t.imageView.image = [UIImage imageNamed:@"playfield.png"];
         t.position = indexPath.item;
         t.game=game;
+        [t updateImage:[game getState:indexPath.item]];
         t.controller=self;
         cell=t;
         
@@ -102,11 +113,33 @@ static float cellSize = 50;
 -(void)updateRowColNumbers:(NSInteger)position{
     NSInteger row = [self positionToRow:position];
   [self.rowCollectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:row inSection:0]]];
+    
+    NSInteger col = [self positionToCol:position];
+     [self.colCollectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:col inSection:0]]];
+    
+    if([game isWinner]){
+        [game stopTimer];
+        [self switchToWinnerScreen];
+    }
+    
 }
 
 -(NSInteger)positionToRow:(NSInteger)position{
     return (position/game.boardsize);
 }
 
+-(NSInteger)positionToCol:(NSInteger)position{
+    NSInteger results = position % game.boardsize;
+    return results;
+}
 
+-(void)switchToWinnerScreen{
+    [self performSegueWithIdentifier:@"WinScreen" sender:self];
+}
+
+
+-(NSObject *)updateTimer:(NSNumber *)withTime{
+    [self timer].text = [[NSString alloc] initWithFormat:@"%d",withTime.integerValue];
+    return withTime;
+}
 @end

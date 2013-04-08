@@ -22,8 +22,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *ColNumWidth;
 @property (weak, nonatomic) IBOutlet RowNum *rowCollectionView;
 @property (weak, nonatomic) IBOutlet ColNum *colCollectionView;
-
+@property (weak, nonatomic) IBOutlet UILabel *timer;
 -(void)updateRowColNumbers:(NSInteger)position;
+-(NSObject *)updateTimer:(NSNumber *)withTime;
 
 
 @end

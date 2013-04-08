@@ -18,4 +18,5 @@
 @property(readwrite,nonatomic) NSInteger position;
 @property(strong,nonatomic) GameModel *game;
 @property(strong,nonatomic) GameController *controller;
+-(void)updateImage:(TileType)state;
 @end

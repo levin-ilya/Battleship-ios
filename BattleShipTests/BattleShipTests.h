@@ -7,7 +7,10 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "GameModel.h"
 
-@interface BattleShipTests : SenTestCase
+@interface BattleShipTests : SenTestCase{
+    GameModel *gameTest;
+}
 
 @end
