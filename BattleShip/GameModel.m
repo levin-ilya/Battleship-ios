@@ -175,13 +175,14 @@
     // add to score
     for (int index=0;index<[scores count];index++){
         if(score<[[scores objectAtIndex:index] integerValue]){
-            [scores replaceObjectAtIndex:index withObject:[NSString stringWithFormat:@"%d",score]];
+            [scores insertObject:[NSString stringWithFormat:@"%d",score] atIndex:index];
+            break;
         }
     }
     
     
     // write to score
-    [scores writeToFile:path atomically:YES];
+    [scores writeToFile:path atomically:NO];
     
     
 }

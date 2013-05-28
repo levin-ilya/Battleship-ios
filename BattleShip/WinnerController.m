@@ -32,7 +32,7 @@
     AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = app.game;
     [self ScoreLabel].text = [[NSString alloc] initWithFormat:@"%d",game.time];
-    
+    [game submitScore:game.time];
     
 }
 
@@ -42,7 +42,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)SaveScore:(id)sender {
-    [game submitScore:game.time];
-}
 @end

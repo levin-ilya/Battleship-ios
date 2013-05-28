@@ -3,7 +3,33 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[GameModel registerTimerLister:method:]:GameModel.m">
+      </ContextState>
+      <ContextState
          contextName = "-[GameController toggleImage:]:GameController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel submitScore:]:GameModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel initWithBoardSize:]:GameModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel readFile:fileType:]:GameModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TileCell touchesEnded:withEvent:]:TileCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel loadLevel:]:GameModel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[lines objectAtIndex:1]==@&quot;&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel rowCount:]:GameModel.m">
       </ContextState>
       <ContextState
          contextName = "-[GameController viewDidLoad]:GameController.m">
@@ -12,6 +38,60 @@
                value = "">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GameController collectionView:cellForItemAtIndexPath:]:GameController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel isRowOver:]:GameModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel setupAnswersRowNum]:GameModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel isWinner]:GameModel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[answerBoard count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel colCount:applyToBoard:]:GameModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BattleShipTests testisWinner]:BattleShipTests.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TileModel isEqualTo:]:TileModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HighScoreController tableView:numberOfRowsInSection:]:HighScoreController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[GameModel.getTopScores objectAtIndex:0]">
+            </PersistentString>
+            <PersistentString
+               value = "[game.getTopScores count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TileModel rotateState]:TileModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel rowCount:applyToBoard:]:GameModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel rotateTile:]:GameModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GameModel answerRowCount:]:GameModel.m">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

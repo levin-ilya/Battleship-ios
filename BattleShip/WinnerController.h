@@ -13,7 +13,7 @@
     GameModel *game;
 }
 @property (weak, nonatomic) IBOutlet UILabel *ScoreLabel;
-@property (weak, nonatomic) IBOutlet UITextField *HighScoreName;
-- (IBAction)SaveScore:(id)sender;
+
+
 
 @end

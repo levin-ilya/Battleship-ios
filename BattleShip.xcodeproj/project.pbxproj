@@ -69,7 +69,6 @@
 		09295BEE171216A000D9F68C /* scores.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09295BED171216A000D9F68C /* scores.txt */; };
 		09295BF717124DCD00D9F68C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09295BF617124DCC00D9F68C /* MainStoryboard_iPhone.storyboard */; };
 		09295BFD17124FC800D9F68C /* HighScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09295BFC17124FC800D9F68C /* HighScoreController.m */; };
-		09295BFF17125CF800D9F68C /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09295BFE17125CF800D9F68C /* ReadMe.txt */; };
 		09FA53A8170AFD8100C21093 /* TileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53A7170AFD8000C21093 /* TileCell.m */; };
 		09FA53AB170BCB3E00C21093 /* TileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53AA170BCB3E00C21093 /* TileModel.m */; };
 		09FA53AF170CC1DE00C21093 /* RowNum.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA53AE170CC1DE00C21093 /* RowNum.m */; };
@@ -135,7 +134,6 @@
 		09295BF617124DCC00D9F68C /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard_iPhone.storyboard; path = ../MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		09295BFB17124FC800D9F68C /* HighScoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreController.h; sourceTree = "<group>"; };
 		09295BFC17124FC800D9F68C /* HighScoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreController.m; sourceTree = "<group>"; };
-		09295BFE17125CF800D9F68C /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		09FA53A6170AFD8000C21093 /* TileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileCell.h; sourceTree = "<group>"; };
 		09FA53A7170AFD8000C21093 /* TileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileCell.m; sourceTree = "<group>"; };
 		09FA53A9170BCB3E00C21093 /* TileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileModel.h; sourceTree = "<group>"; };
@@ -242,7 +240,6 @@
 				0914D6501707CA25005F5A1C /* Supporting Files */,
 				0914D69D1708A099005F5A1C /* GameModel.h */,
 				0914D69E1708A099005F5A1C /* GameModel.m */,
-				09295BFE17125CF800D9F68C /* ReadMe.txt */,
 			);
 			path = BattleShip;
 			sourceTree = "<group>";
@@ -473,7 +470,6 @@
 				09295BEC17120FA500D9F68C /* scores.plist in Resources */,
 				09295BEE171216A000D9F68C /* scores.txt in Resources */,
 				09295BF717124DCD00D9F68C /* MainStoryboard_iPhone.storyboard in Resources */,
-				09295BFF17125CF800D9F68C /* ReadMe.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
